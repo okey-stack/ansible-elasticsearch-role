@@ -5,4 +5,3 @@
   service:
     name: elasticsearch
     state: restarted
-  when: ansible_virtualization_type != 'docker'

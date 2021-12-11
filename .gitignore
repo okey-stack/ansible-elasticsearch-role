@@ -1,0 +1,4 @@
+files/*
+molecule/*/files/*
+.tox/*
+.env/*

@@ -1,0 +1,24 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+platforms:
+  - name: centos7
+    image: docker.io/pycontribs/centos:7
+    pre_build_image: true
+    command: /sbin/init
+    privileged: True
+    memory: 2GB
+    memory-swap: -1
+  - name: centos8
+    image: docker.io/pycontribs/centos:8
+    pre_build_image: true
+    command: /sbin/init
+    privileged: True
+    memory: 2GB
+    memory-swap: -1
+provisioner:
+  name: ansible
+verifier:
+  name: ansible
